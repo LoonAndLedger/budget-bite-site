@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Bite — High-protein meal plans that fit your budget</title>
+<meta name="description" content="Budget Bite is an iPhone app, coming soon, that plans a week of high-protein meals around your grocery budget.">
+<style>
+  :root {
+    --bg: #f5faf9; --surface: #ffffff; --text: #1c2929; --muted: #5b6969;
+    --teal: #0f9488; --teal-ink: #0b6f66; --orange: #ff7340; --border: #dbe7e5;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101616; --surface: #1c2626; --text: #eef5f4; --muted: #9fb0af; --teal: #2bb8a9; --teal-ink: #59cfc2; --border: #334040; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 24px 40px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+  .mark { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(160deg, var(--teal), var(--teal-ink)); display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 22px; }
+  .brand span { font-weight: 700; font-size: 20px; letter-spacing: .2px; }
+  h1 { font-size: clamp(34px, 7vw, 52px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -.5px; text-wrap: balance; }
+  .lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; max-width: 34em; }
+  .status { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--orange) 14%, var(--surface)); border: 1px solid color-mix(in srgb, var(--orange) 40%, var(--border)); font-weight: 600; font-size: 15px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
+  h2 { font-size: 24px; margin: 56px 0 18px; letter-spacing: -.2px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .about p { color: var(--muted); max-width: 40em; margin: 0 0 14px; }
+  .contact a { color: var(--teal-ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  footer { max-width: 760px; margin: 0 auto; padding: 24px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
+  a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><div class="mark" aria-hidden="true">B</div><span>Budget Bite</span></div>
+
+  <h1>A week of high-protein meals, planned around your budget.</h1>
+  <p class="lead">Tell Budget Bite your protein goal and your weekly grocery budget. It builds a full week of meals and a grocery list that stays inside what you can spend.</p>
+  <p class="status"><span class="dot" aria-hidden="true"></span> iPhone app — coming soon to the App Store</p>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Plans around your goals</h3><p>Set a daily protein target and a weekly budget, and get a seven-day plan with recipes.</p></div>
+    <div class="card"><h3>A grocery list that makes sense</h3><p>One consolidated shopping list, sorted by store section, with photos so you can spot items.</p></div>
+    <div class="card"><h3>Fits how you eat</h3><p>Dietary preferences, allergies, and fasting days, so meat-free days are planned for you.</p></div>
+    <div class="card"><h3>Track what you actually eat</h3><p>Check off meals, add anything extra, and see calories and protein for the day.</p></div>
+  </div>
+
+  <h2>About</h2>
+  <div class="about">
+    <p>Budget Bite is built for students and anyone who wants to hit a protein goal without overspending on groceries. It is currently in development and has not been released yet.</p>
+    <p>Budget Bite is made by Loon and Ledger Ltd., an Alberta corporation.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p class="contact">Questions? Email <a href="mailto:loonandledger.dev@proton.me">loonandledger.dev@proton.me</a>.</p>
+</main>
+<footer>&copy; 2026 Loon and Ledger Ltd. All rights reserved. Budget Bite is not yet available on the App Store.</footer>
+</body>
+</html>
